@@ -22,9 +22,14 @@ if [ -d $FISH_CONFIG ] ; then
   if [ "$(ls -A $FISH_CONFIG)" ] ; then
     tar czPf $FISH_CONFIG/old_config.tar.gz $FISH_CONFIG/*
   fi
+
+  if [ -d $FISH_CONFIG/functions ] ; then
+    mkdir $FISH_CONFIG/functions
+  fi
+
 else 
   # ** create the directory              **
-  mkdir $FISH_CONFIG 
+  mkdir -p $FISH_CONFIG/functions
 fi
 
 # ** Detect current script location ** 
@@ -36,5 +41,7 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 #####################################
 ln -sf $DIR/config.fish $FISH_CONFIG/config.fish
 ln -sf $DIR/aliases.fish $FISH_CONFIG/aliases.fish
+ln -sf $DIR/functions/fish_prompt.fish $FISH_CONFIG/functions/fish_prompt.fish
+ln -sf $DIR/functions/fish_right_prompt.fish $FISH_CONFIG/functions/fish_right_prompt.fish
 
 echo -e "\033[1;32mSUCCESS\033[0m Have fun ;)"

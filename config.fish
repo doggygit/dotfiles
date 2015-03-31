@@ -33,15 +33,15 @@ function fish_prompt
   set last_status $status
 
   set_color $fish_color_cwd
-  printf '%s' (prompt_pwd)
+  printf '%s ' (prompt_pwd)
   set_color normal
 
-  printf '%s ' (__fish_git_prompt)
 
   set_color normal
 end
 
 function fish_right_prompt -d "Write out the right prompt"
+  printf '%s ' (__fish_git_prompt)
   if test $status -eq 0
     echo (set_color green)'✔ '(set_color normal)
   else

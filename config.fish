@@ -1,6 +1,6 @@
 . ~/.config/fish/aliases.fish
 
-if test -f $HOME/.config/fish/config.local.fish 
+if test -e ~/.config/fish/config.local.fish  
   . ~/.config/fish/config.local.fish
 end
 

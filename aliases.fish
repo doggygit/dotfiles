@@ -48,6 +48,7 @@ alias gpl='git pull'
 #alias gbc='git checkout -b'
 
 ##############################################################################
-# Please
+# Personal Aliases
 ############################################################################## 
 alias please='eval "sudo $history[1]"'
+alias so='source ~/.config/fish/config.fish'

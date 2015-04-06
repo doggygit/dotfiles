@@ -16,6 +16,8 @@ alias l='ls -lh'
 alias ll='ls -hal'
 # List everything, by reverse date
 alias lld='ls -thral'
+# Default alias config
+alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 
 ##############################################################################
 # Git
@@ -52,3 +54,7 @@ alias gpl='git pull'
 ############################################################################## 
 alias please='eval "sudo $history[1]"'
 alias so='source ~/.config/fish/config.fish'
+alias fishrc='vim ~/.config/fish/config.fish'
+alias vimrc='vim ~/.vimrc'
+alias f='find . -name'
+

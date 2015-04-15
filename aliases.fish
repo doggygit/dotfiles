@@ -53,7 +53,7 @@ alias gpl='git pull'
 # Personal Aliases
 ############################################################################## 
 alias please='eval "sudo $history[1]"'
-alias so='source ~/.config/fish/config.fish'
+alias so='. ~/.config/fish/config.fish'
 alias fishrc='vim ~/.config/fish/config.fish'
 alias vimrc='vim ~/.vimrc'
 alias f='find . -name'

@@ -1,4 +1,5 @@
 . ~/.config/fish/aliases.fish
+. ~/.config/fish/solarized.fish
 
 if test -e ~/.config/fish/config.local.fish  
   . ~/.config/fish/config.local.fish

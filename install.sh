@@ -45,5 +45,6 @@ ln -sf $DIR/functions/fish_prompt.fish $FISH_CONFIG/functions/fish_prompt.fish
 ln -sf $DIR/functions/fish_right_prompt.fish $FISH_CONFIG/functions/fish_right_prompt.fish
 ln -sf $DIR/functions/hs.fish $FISH_CONFIG/functions/hs.fish
 ln -sf $DIR/solarized.fish $FISH_CONFIG/solarized.fish
+ln -sf $DIR/conda.fish $FISH_CONFIG/conda.fish
 
 echo -e "\033[1;32mSUCCESS\033[0m Have fun ;)"

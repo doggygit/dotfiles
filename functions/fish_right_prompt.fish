@@ -24,9 +24,10 @@
 
 function fish_right_prompt -d "Write out the right prompt"
   printf '%s ' (__fish_git_prompt)
-  if test $status -eq 0
-    echo (set_color green)'✔ '(set_color normal)
+  if test $last_status -eq 0
+    echo (set_color green)'✔ '
   else
-    echo (set_color red)$status' '(set_color normal)
+    echo (set_color red)$last_status' '
   end
+  set_color normal
 end

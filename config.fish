@@ -13,3 +13,6 @@ end
   set red (set_color red)
   set gray (set_color -o black)
 
+set -x PATH $HOME/.rbenv/bin $HOME/code/command_line_tools_kp/bin $PATH
+status --is-interactive; and . (rbenv init -|psub)
+

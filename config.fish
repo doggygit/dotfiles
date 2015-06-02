@@ -14,5 +14,6 @@ end
   set gray (set_color -o black)
 
 set -x PATH $HOME/.rbenv/bin $HOME/code/command_line_tools_kp/bin $PATH
+set -x XDG_CONFIG_HOME $HOME/.config
 status --is-interactive; and . (rbenv init -|psub)
 

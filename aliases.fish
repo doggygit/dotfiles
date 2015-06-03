@@ -58,4 +58,5 @@ alias so='. ~/.config/fish/config.fish'
 alias fishrc='vim ~/.config/fish/config.fish'
 alias vimrc='vim ~/.vimrc'
 alias f='find . -name'
+alias be='bundle exec'
 
